@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A</title>
+  <script>
+    window.onload = ()=>{document.querySelector('#aud').play();}
+    </script>
 </head>
 <body>
-  <audio loop autoplay="autoplay" controls allow="autoplay">
-    <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
-    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
-  </audio>
+  <!-- <audio id="player" autoplay controls><source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mp3"></audio> -->
+  <audio loop autoplay="autoplay" controls allow="autoplay" id="aud">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html>
